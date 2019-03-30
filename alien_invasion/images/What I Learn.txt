@@ -1,0 +1,14 @@
+1. How to use several modules in pygame
+
+2. As function parameters don't have types, we don't need to import modules for them.
+  Only when we create object from other files directly, import is necessary.
+
+3. Lists or other mutable objects are referenced when passing between functions.
+
+4. Use flags to control the state and action of a program
+
+5. Try to put every relevant attribute and method within the class
+
+6.Program structure
+    Keep the main function as clear and simple as possible.
+
