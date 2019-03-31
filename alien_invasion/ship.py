@@ -38,7 +38,8 @@ class Ship():
                 self.centerx = float(self.rect.centerx)
             else:
                 self.centerx += self.ai_setting.ship_speed_factor
-                self.rect.centerx = int(self.centerx)
+                self.rect.centerx = self.centerx
+
 
         if self.moving_left:
             # moving ship to left
@@ -47,4 +48,7 @@ class Ship():
                 self.centerx = float(self.rect.centerx)
             else:
                 self.centerx -= self.ai_setting.ship_speed_factor
-                self.rect.centerx = int(self.centerx)
+                self.rect.centerx = self.centerx
+
+    def center_ship(self):
+        self.centerx = self.screen_rect.centerx
